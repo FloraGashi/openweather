@@ -20,9 +20,10 @@
 </section>
 
 <script>
+    var city = "";
     var header = document.querySelector('header');
     var section = document.querySelector('section');
-    var requestURL =  "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+    var requestURL =  "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=a48e18620d97952886116cae7aa1b8dc";
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
